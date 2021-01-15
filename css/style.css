@@ -5,22 +5,20 @@
 }
 body{
   background-color: #ADD8E6;
-
+  font-family: 'Nerko One', cursive;
 }
 
 .titolo{
   text-align: center;
   margin-top: 10px;
+  font-size: 50px;
 }
-
 main{
   margin-top: 50px;
 }
 .container{
   width: 1200px;
   margin: auto;
-
-
 }
 
 .box-img{
@@ -53,6 +51,17 @@ main{
   display: block;
 }
 .box-img:hover .nome-carta{
+  display: block;
+}
+
+.carta-scoperta{
+  background-color: white;
+  background-image: none;
+}
+.carta-scoperta img{
+  display: block;
+}
+.carta-scoperta .nome-carta{
   display: block;
 }
 
