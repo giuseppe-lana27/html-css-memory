@@ -7,14 +7,12 @@ body{
   background-color: #ADD8E6;
   font-family: 'Nerko One', cursive;
 }
-
 .titolo{
   text-align: center;
   margin-top: 10px;
   font-size: 100px;
   color: white;
   text-shadow: 2px 2px 5px lightgrey;
-
 }
 main{
   margin-top: 50px;
@@ -23,14 +21,12 @@ main{
   width: 1200px;
   margin: auto;
 }
-
 .box-img{
   height: 300px;
   width: 250px;
   background-color: white;
   border-radius: 10%;
   margin: 20px;
-  text-align: center;
   color: orange;
   display: inline-block;
   margin-left: 20px;
@@ -38,27 +34,35 @@ main{
   background-position: center;
   background-size: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
 }
 .nome-carta{
   display: inline-block;
   text-shadow: 2px 2px 5px lightgrey;
+  text-align: center;
 }
-.box-img img,.nome-carta{
+.box-img img{
   max-width: 100%;
   display: none;
+  position: absolute;
+  top: 5px;
 }
-
+.box-img .nome-carta{
+  max-width: 100%;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+}
 .box-img:hover{
   background-image: none;
 }
-
 .box-img:hover img{
   display: block;
 }
 .box-img:hover .nome-carta{
   display: block;
 }
-
 .carta-scoperta{
   background-color: white;
   background-image: none;
@@ -69,7 +73,6 @@ main{
 .carta-scoperta .nome-carta{
   display: block;
 }
-
 footer{
   text-align: center;
 }
