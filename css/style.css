@@ -8,15 +8,16 @@ body{
 
 }
 
-header{
+.titolo{
   text-align: center;
+  margin-top: 20px;
 }
 
 main{
   margin-top: 100px;
 }
 .container{
-  width: 1000px;
+  width: 1200px;
   margin: auto;
   position: relative;
 }
@@ -26,8 +27,30 @@ main{
   width: 250px;
   background-color: white;
   border-radius: 10%;
+  margin: 20px;
   text-align: center;
   color: orange;
   display: inline-block;
   margin-left: 10px;
+  background-image: url('../img/pattern.png');
+  background-position: center;
+  background-size: contain;
+}
+.nome-carta{
+  display: inline-block;
+}
+.box-img img,.nome-carta{
+  max-width: 100%;
+  display: none;
+}
+
+.box-img:hover{
+  background-image: none;
+}
+
+.box-img:hover img{
+  display: block;
+}
+.box-img:hover .nome-carta{
+  display: block;
 }
